@@ -10,21 +10,21 @@
 /* global console */
 
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
-import Collection from '@ckeditor/ckeditor5-utils/src/collection';
-import clickOutsideHandler from '@ckeditor/ckeditor5-ui/src/bindings/clickoutsidehandler';
-import { keyCodes } from '@ckeditor/ckeditor5-utils/src/keyboard';
-import env from '@ckeditor/ckeditor5-utils/src/env';
-import Rect from '@ckeditor/ckeditor5-utils/src/dom/rect';
-import CKEditorError, { attachLinkToDocumentation } from '@ckeditor/ckeditor5-utils/src/ckeditorerror';
-import ContextualBalloon from '@ckeditor/ckeditor5-ui/src/panel/balloon/contextualballoon';
-import { debounce } from 'lodash-es';
-
 import TextWatcher from '@ckeditor/ckeditor5-typing/src/textwatcher';
-
-import MentionsView from './ui/mentionsview';
+import clickOutsideHandler from '@ckeditor/ckeditor5-ui/src/bindings/clickoutsidehandler';
+import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
+import ContextualBalloon from '@ckeditor/ckeditor5-ui/src/panel/balloon/contextualballoon';
+import CKEditorError, { attachLinkToDocumentation } from '@ckeditor/ckeditor5-utils/src/ckeditorerror';
+import Collection from '@ckeditor/ckeditor5-utils/src/collection';
+import Rect from '@ckeditor/ckeditor5-utils/src/dom/rect';
+import env from '@ckeditor/ckeditor5-utils/src/env';
+import { keyCodes } from '@ckeditor/ckeditor5-utils/src/keyboard';
+import { debounce } from 'lodash-es';
 import DomWrapperView from './ui/domwrapperview';
 import MentionListItemView from './ui/mentionlistitemview';
+import MentionsView from './ui/mentionsview';
+
+
 
 const VERTICAL_SPACING = 3;
 
@@ -689,7 +689,7 @@ function createFeedCallback( feedItems ) {
 				return itemId.toLowerCase().includes( feedText.toLowerCase() );
 			} )
 			// Do not return more than 10 items.
-			.slice( 0, 10 );
+			.slice( 0, 100 );
 
 		return filteredItems;
 	};
