@@ -1,6 +1,6 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
-  "version": "21.0.0",
+  "name": "@targetx/ckeditor5-build-classic",
+  "version": "22.0.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -26,6 +26,7 @@
   ],
   "devDependencies": {
     "@ckeditor/ckeditor5-adapter-ckfinder": "^21.0.0",
+    "@ckeditor/ckeditor5-alignment": "^21.0.0",
     "@ckeditor/ckeditor5-autoformat": "^21.0.0",
     "@ckeditor/ckeditor5-basic-styles": "^21.0.0",
     "@ckeditor/ckeditor5-block-quote": "^21.0.0",
@@ -36,7 +37,9 @@
     "@ckeditor/ckeditor5-easy-image": "^21.0.0",
     "@ckeditor/ckeditor5-editor-classic": "^21.0.0",
     "@ckeditor/ckeditor5-essentials": "^21.0.0",
+    "@ckeditor/ckeditor5-font": "^21.0.0",
     "@ckeditor/ckeditor5-heading": "^21.0.0",
+    "@ckeditor/ckeditor5-highlight": "^21.0.0",
     "@ckeditor/ckeditor5-image": "^21.0.0",
     "@ckeditor/ckeditor5-indent": "^21.0.0",
     "@ckeditor/ckeditor5-link": "^21.0.0",
@@ -47,6 +50,8 @@
     "@ckeditor/ckeditor5-table": "^21.0.0",
     "@ckeditor/ckeditor5-typing": "^21.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^21.0.0",
+    "@targetx/ckeditor5-mention": "22.0.0",
+    "copy-webpack-plugin": "^5.0.4",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^4.0.1",
     "style-loader": "^1.2.1",
@@ -61,10 +66,10 @@
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": "https://github.com/targetx/fork-ckeditor5/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "url": "https://github.com/targetx/fork-ckeditor5.git",
     "directory": "packages/ckeditor5-build-classic"
   },
   "scripts": {
